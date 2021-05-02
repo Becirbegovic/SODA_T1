@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb" if-exists="true" version="2.1">
+      
+    <!--
+
+Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.3.0 generiert 
+Siehe <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+Generiert: 2021.04.29 um 01:49:00 PM CEST 
+
+  -->
+      
+    <bindings xmlns:tns="urn:ec.europa.eu:taxud:vies:services:checkVat:types" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.sodatech.services.vat.generated"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="tns:checkVat">
+                  
+            <class ref="com.sodatech.services.vat.generated.CheckVat"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:checkVatResponse">
+                  
+            <class ref="com.sodatech.services.vat.generated.CheckVatResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:checkVatApprox">
+                  
+            <class ref="com.sodatech.services.vat.generated.CheckVatApprox"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:checkVatApproxResponse">
+                  
+            <class ref="com.sodatech.services.vat.generated.CheckVatApproxResponse"/>
+                
+        </bindings>
+          
+    </bindings>
+    
+</bindings>

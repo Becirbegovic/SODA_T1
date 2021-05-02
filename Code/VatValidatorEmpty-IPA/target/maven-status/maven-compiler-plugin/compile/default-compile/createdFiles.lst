@@ -1,0 +1,3 @@
+com\sodatech\services\vat\services\vat\dto\VatCheckRequest.class
+com\sodatech\services\vat\generated\package-info.class
+com\sodatech\services\vat\rest\ping\controller\VatController.class

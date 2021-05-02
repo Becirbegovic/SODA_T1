@@ -1,0 +1,28 @@
+<!--
+    This is the configuration file for the ehcache implementation.
+    The file serves as the configuration for the VAT validation caches.
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:jsr107="http://www.ehcache.org/v3/jsr107"
+        xmlns="http://www.ehcache.org/v3"
+        xsi:schemaLocation="
+            http://www.ehcache.org/v3 http://www.ehcache.org/schema/ehcache-core-3.0.xsd
+            http://www.ehcache.org/v3/jsr107 http://www.ehcache.org/schema/ehcache-107-ext-3.0.xsd">
+
+    <service>
+        <jsr107:defaults enable-statistics="true"/>
+    </service>
+
+    <persistence directory="${java.io.tmpdir}/ehcache-vat"/>
+
+    <!-- Default cache template -->
+    <cache-template name="default">
+        <expiry>
+            <ttl unit="hours">1</ttl>
+        </expiry>
+
+        <resources>
+            <heap>10000</heap>
+        </resources>
+    </cache-template>
+</config>
